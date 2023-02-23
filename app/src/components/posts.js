@@ -1,5 +1,7 @@
 import React from 'react'
-import placeholder from '/workspaces/townhall/app/src/images/placeholder.jpeg'
+import Comment from './comment'
+import placeholder from '/Users/zikangjiang/Desktop/townhall/app/src/images/placeholder.png'
+
 
 export default function Posts(props){
 
@@ -44,6 +46,7 @@ export default function Posts(props){
         }
     }
 
+    const [comment, setComment] = React.useState('thoughts?')
 
     return(
         <div className = 'post'>
@@ -55,12 +58,18 @@ export default function Posts(props){
                     <p>Status: {text}</p>
                 </div>
             </div>
+                
             <div className = 'buttons'>
                 <button className = 'like--button' onClick = {changeLikes}>Like</button>
                 <p className = "likes--count">{likes}</p>
                 <button className = 'dislike--button' onClick = {changeDislikes}>Dislike</button>
                 <p className = "dislikes--count" >{dislikes}</p>
             </div>
+            
+            <Comment
+                    comment = {comment}
+                    setComment = {setComment}
+                />
         </div>
     )
 }
