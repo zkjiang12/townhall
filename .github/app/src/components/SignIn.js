@@ -8,8 +8,7 @@ const SignIn = () => {
         const provider = new GoogleAuthProvider();
         signInWithRedirect(auth,provider)
     }
-    console.log({auth})
-    console.log(1)
+
     return(
         <dib className = 'SignIn'>
             <button onClick={LogIn}>Sign In</button>

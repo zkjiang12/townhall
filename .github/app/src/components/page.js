@@ -13,8 +13,11 @@ export default function Page(){
     return(
         <div className = 'homepage'>
             <SignIn className = 'button'/>
+
             <img src ={jiao} type = 'button' onClick={Comment} className = 'test--image--button' alt = 'jiaojiao'/>
             {state ? <h1>Hi</h1>:<h1>{''}</h1>}
+
+
         </div>
     )
 }

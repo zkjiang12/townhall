@@ -3,7 +3,6 @@ import React from 'react'
 import NavBar from './components/navbar'
 import Posts from './components/posts'
 import Page from './components/page'
-
 // import Inputs from './components/input'
 import Odata from './data'
 import Form from './components/form'
