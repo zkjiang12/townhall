@@ -4,6 +4,7 @@ export default function Comment(props){
     const setComment = props.setComment
     const comment = props.comment
 
+
     return(
         <div className = 'comment'>
             <h4>Thoughts</h4>
@@ -14,6 +15,7 @@ export default function Comment(props){
                 onChange={(e)=>setComment(e.target.value)}
                 >
             </textarea>
+
         </div>
     )
 }
