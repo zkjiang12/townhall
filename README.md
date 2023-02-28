@@ -1,6 +1,6 @@
 # townhall
 
-The app folder is the actual folder with the code in it
+The github/app folder is the actual folder with the code in it
 the other folder and App.js was made on accident, don't look at that one.
 
 Goal for now, make website where people can post content, comment on other posts, like and dislike posts.
