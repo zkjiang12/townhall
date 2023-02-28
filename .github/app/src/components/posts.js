@@ -83,7 +83,6 @@ export default function Posts(props){
                 {submit ? <div>{comment}</div> : <h1>{''}</h1>}
 
              <button onClick = {Submit}>Submit</button>
-             
 
         </div>
     )

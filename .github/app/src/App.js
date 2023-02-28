@@ -3,6 +3,9 @@ import React from 'react'
 import NavBar from './components/navbar'
 import Posts from './components/posts'
 import Page from './components/page'
+import DbPosts from './components/DbPosts'
+
+
 // import Inputs from './components/input'
 import Odata from './data'
 import Form from './components/form'
@@ -53,7 +56,14 @@ export default function App() {
         // if user is logged in, render full page
         <div>
           <NavBar/>
+
+          {/* DbPosts is to test getting data from firestroe database */}
+          <DbPosts/> 
+
+          {/* {posts}, this is the actual code so far, but will be deleted once I style DbPosts */}
+
           {posts}
+
          
           {formDisplay ? 
           <div className = 'create'>
