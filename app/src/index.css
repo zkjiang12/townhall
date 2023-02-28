@@ -3,11 +3,6 @@ body{
     
 }
 
-button{
-    cursor: pointer;
-}
-
-
 /* styling for navbar.js */
 nav{
     padding: 10px;
@@ -28,11 +23,6 @@ nav{
     margin-right: 20px;
     color: white;
 }
-
-.user--info--image{
-    width:50px;
-}
-
 
 /* styling for posts.js */
 
@@ -158,20 +148,4 @@ nav{
     width: 40px;
     cursor: pointer;
 }
-
-
-/* user account info page */
-.user--info{
-    background-color: whitesmoke;
-    padding: 10px;
-}
-.user--IMG{
-    width:50px;
-}
-.user--info>button{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-
 
