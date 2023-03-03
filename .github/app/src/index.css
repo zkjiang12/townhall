@@ -7,7 +7,6 @@ button{
     cursor: pointer;
 }
 
-
 /* styling for navbar.js */
 nav{
     padding: 10px;
@@ -61,11 +60,16 @@ nav{
     background-color: rgb(131, 255, 131);
     margin-right: 5px;
     cursor: pointer;
+    border-radius: 15px;
+    border: 0px;
+
 }
 .dislike--button{
     background-color: rgb(255, 130, 130);
     cursor: pointer;
     margin-right: 5px;
+    border-radius: 15px;
+    border: 0px;
 }
 .likes--count{
     margin-right: 15px;
@@ -159,7 +163,6 @@ nav{
     cursor: pointer;
 }
 
-
 /* user account info page */
 .user--info{
     background-color: whitesmoke;
@@ -174,4 +177,16 @@ nav{
 }
 
 
+/* Styling for Post page(posts taken from databse)  */
+.post--container{
+    display:flex;
+    margin: 10px;
+}
+.post--foto{
+    width: 150px;
+    border-radius: 25px;
+}
+.post--info{
+    padding:10px;
+}
 

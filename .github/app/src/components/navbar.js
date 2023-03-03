@@ -10,6 +10,7 @@ export default function NavBar(){
         setStatus(true)
     }
 
+
 import LogOut from '/workspaces/townhall/.github/app/src/components/LogOut.js'
 
 
@@ -30,8 +31,9 @@ export default function NavBar(){
                         />
                 :<img src = {jiao} type = 'button' onClick = {setTrue} alt = 'dog' className = 'user--info--image'/>
             }
-          
+ 
             <LogOut/>
+
 
 
         </nav>

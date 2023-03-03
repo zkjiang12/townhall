@@ -22,6 +22,9 @@ export default function App() {
   const [content,setContent] = useState('Input Your Thoughts')
   const [data,setData] = useState(Odata)
 
+
+  const [run,setRun] = useState(false)
+
   const posts = data.map(item => {
     console.log(data)
     return(
@@ -31,6 +34,9 @@ export default function App() {
         likes = {item.likes}
       />
     )
+
+  })
+
     
 
   })
@@ -42,6 +48,7 @@ export default function App() {
       likes: 0
     }])
   }
+
 
   const [user] = useAuthState(auth)
   const [formDisplay,setFormDisplay] = useState(false)
@@ -62,7 +69,9 @@ export default function App() {
 
           {/* {posts}, this is the actual code so far, but will be deleted once I style DbPosts */}
 
+
           {posts}
+
 
          
           {formDisplay ? 
@@ -73,8 +82,14 @@ export default function App() {
               setTitle = {setName}
               body = {content} 
               setBody={setContent}
+
+              rerun = {run}
+            />
+            <button>Submit</button>
+
             />
             <button onClick = {postContent}>Submit</button>
+
           </div>: ''}
           <img src = {addSign} type = 'button' onClick = {displayForm} className = 'form-input-button' alt = 'plus sign' />
         </div>
