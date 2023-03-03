@@ -1,6 +1,6 @@
 import React from 'react'
 import Comment from './comment'
-import placeholder from '/workspaces/townhall/.github/app/src/images/placeholder.jpeg'
+import placeholder from '/Users/zikangjiang/Desktop/townhall/app/src/images/placeholder.png'
 
 
 export default function Posts(props){
@@ -46,15 +46,7 @@ export default function Posts(props){
         }
     }
 
-       
-
     const [comment, setComment] = React.useState('thoughts?')
-    const [submit, setSubmit] = React.useState(false)
-
-    function Submit(){
-        setSubmit(prevsubmit => !prevsubmit)
-    }
-
 
     return(
         <div className = 'post'>
@@ -78,16 +70,6 @@ export default function Posts(props){
                     comment = {comment}
                     setComment = {setComment}
                 />
-
-                {submit ? <div>{comment}</div> : <h1>{''}</h1>}
-
-             <button onClick = {Submit}>Submit</button>
-
-                {submit ? <div>{comment}</div> : <h1>{''}</h1>}
-
-             <button onClick = {Submit}>Submit</button>
-
-
         </div>
     )
 }

@@ -15,7 +15,7 @@ export default function Comment(props){
                 onChange={(e)=>setComment(e.target.value)}
                 >
             </textarea>
-           
+
         </div>
     )
 }

@@ -5,6 +5,7 @@ import Posts from './components/posts'
 import Page from './components/page'
 import DbPosts from './components/DbPosts'
 
+
 // import Inputs from './components/input'
 import Odata from './data'
 import Form from './components/form'
@@ -21,6 +22,7 @@ export default function App() {
   const [content,setContent] = useState('Input Your Thoughts')
   const [data,setData] = useState(Odata)
 
+
   const [run,setRun] = useState(false)
 
   const posts = data.map(item => {
@@ -32,9 +34,21 @@ export default function App() {
         likes = {item.likes}
       />
     )
+
   })
 
-  
+    
+
+  })
+
+  function postContent(){
+    setData(prevData => [...prevData,{
+      title: `Problems: ${name}`,
+      description: `Solution: ${content}`,
+      likes: 0
+    }])
+  }
+
 
   const [user] = useAuthState(auth)
   const [formDisplay,setFormDisplay] = useState(false)
@@ -49,10 +63,15 @@ export default function App() {
         // if user is logged in, render full page
         <div>
           <NavBar/>
+
           {/* DbPosts is to test getting data from firestroe database */}
           <DbPosts/> 
 
           {/* {posts}, this is the actual code so far, but will be deleted once I style DbPosts */}
+
+
+          {posts}
+
 
          
           {formDisplay ? 
@@ -63,9 +82,14 @@ export default function App() {
               setTitle = {setName}
               body = {content} 
               setBody={setContent}
+
               rerun = {run}
             />
             <button>Submit</button>
+
+            />
+            <button onClick = {postContent}>Submit</button>
+
           </div>: ''}
           <img src = {addSign} type = 'button' onClick = {displayForm} className = 'form-input-button' alt = 'plus sign' />
         </div>
